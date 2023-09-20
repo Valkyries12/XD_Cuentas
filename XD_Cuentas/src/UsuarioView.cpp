@@ -19,5 +19,5 @@ std::string UsuarioView::getMensaje() const {
 }
 
 void UsuarioView::setMensaje(std::string mensaje) {
-    strcpy(_mensaje, mensaje);
+    strcpy(_mensaje, mensaje.c_str());
 }
