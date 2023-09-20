@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\ncaruso\desktop\xd_cuentas\xd_cuentas\main.cpp
+	<iostream>
+
+1695168813 source:c:\users\ncaruso\desktop\xd_cuentas\xd_cuentas\src\usuario.cpp
+	<iostream>
+	"cstring"
+	"Usuario.h"
+
+1695168377 c:\users\ncaruso\desktop\xd_cuentas\xd_cuentas\include\usuario.h
+
+1695168895 source:c:\users\ncaruso\desktop\xd_cuentas\xd_cuentas\src\usuarioview.cpp
+	<iostream>
+	"UsuarioView.h"
+
+1695168858 c:\users\ncaruso\desktop\xd_cuentas\xd_cuentas\include\usuarioview.h
+
