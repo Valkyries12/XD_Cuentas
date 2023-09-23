@@ -12,5 +12,6 @@ int main()
     usuarioModel.crearArchivo();
     usuarioModel.registrar(usuarioModel.getUsuario());
     usuarioModel.leer();
+    cout << usuarioModel.buscar("nicolas");
     return 0;
 }
