@@ -42,18 +42,39 @@ std::string UsuarioModel::getNombreArchivo() const {
 //metodos
 bool UsuarioModel::crearArchivo() {
     FILE* pFile;
-    bool estaCreado = false;
+    bool fueCreado = false;
     pFile = fopen(_nombreArchivo, "wb");
     if (pFile != nullptr) {
-        estaCreado = true;
+        fueCreado = true;
         fclose(pFile);
     }
 
-    return estaCreado;
+    return fueCreado;
 }
 
-bool UsuarioModel::registrar(Usuario usuario) {
 
+bool UsuarioModel::registrar(Usuario usuario) {
+    FILE* pFile;
+    bool fueRegistrado = false;
+    pFile = fopen(_nombreArchivo, "ab");
+    if (pFile != nullptr) {
+        fueRegistrado = fwrite(&usuario, sizeof(Usuario), 1, pFile);
+        fclose(pFile);
+    }
+
+    return fueRegistrado;
+}
+
+bool UsuarioModel::leer() {
+    Usuario usuario;
+    FILE* pFile;
+    bool fueLeido = false;
+    pFile = fopen(_nombreArchivo, "rb");
+    if (pFile != nullptr) {
+        while(fread(&usuario, sizeof(Usuario), 1, pFile)== 1) {
+            std::cout << usuario.getEmail();
+        }
+    }
 }
 
 bool UsuarioModel::buscar(std::string email) {
