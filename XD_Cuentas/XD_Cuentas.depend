@@ -22,7 +22,7 @@
 1695488746 c:\users\ncaruso\desktop\xd_cuentas\xd_cuentas\include\usuariomodel.h
 	"Usuario.h"
 
-1695492590 source:c:\users\ncaruso\desktop\xd_cuentas\xd_cuentas\src\usuariomodel.cpp
+1695494238 source:c:\users\ncaruso\desktop\xd_cuentas\xd_cuentas\src\usuariomodel.cpp
 	<iostream>
 	"cstring"
 	"UsuarioModel.h"
