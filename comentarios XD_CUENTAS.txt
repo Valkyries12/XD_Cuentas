@@ -1,0 +1,8 @@
+UsuarioController
+Los metodos son void porque por dentro dependiendo si falla o no la lectura/escritura del archivo voy a usar el setter de la vista paraponerle unb mensaje y luego mostrarlo
+void buscarUsuarioPorEmail(email) {
+	if (modelo.buscar("mail@mail.com")) {
+		vista.setMensaje("se ecnotnro");
+		vista.mostrarMnesaje()
+	}
+}

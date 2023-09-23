@@ -21,3 +21,11 @@ std::string UsuarioView::getMensaje() const {
 void UsuarioView::setMensaje(std::string mensaje) {
     strcpy(_mensaje, mensaje.c_str());
 }
+
+Usuario UsuarioView::getUsuario() const {
+    return _usuario;
+}
+
+void UsuarioView::setUsuario(Usuario usuario) {
+    _usuario = usuario;
+}

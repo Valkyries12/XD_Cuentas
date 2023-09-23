@@ -1,9 +1,13 @@
 #include <iostream>
 
+#include "UsuarioModel.h"
+#include "Usuario.h"
+
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    UsuarioModel usuarioModel(Usuario(1, "nicolas", "asd123"), "usuarios.dat");
+    usuarioModel.crearArchivo();
     return 0;
 }

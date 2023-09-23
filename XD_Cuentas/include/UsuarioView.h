@@ -1,6 +1,8 @@
 #ifndef USUARIOVIEW_H
 #define USUARIOVIEW_H
 
+#include "Usuario.h"
+
 
 class UsuarioView
 {
@@ -12,6 +14,8 @@ class UsuarioView
         //getters y setters
         std::string getMensaje() const;
         void setMensaje(std::string mensaje);
+        Usuario getUsuario() const;
+        void setUsuario(Usuario usuario);
 
         //metodos
 
@@ -19,6 +23,7 @@ class UsuarioView
 
     private:
         char _mensaje[100];
+        Usuario _usuario;
 };
 
 #endif // USUARIOVIEW_H

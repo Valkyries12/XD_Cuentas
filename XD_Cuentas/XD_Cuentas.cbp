@@ -5,6 +5,7 @@
 		<Option title="XD_Cuentas" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
+		<Option virtualFolders="Model/;View/;Controller/" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/XD_Cuentas" prefix_auto="1" extension_auto="1" />
@@ -13,6 +14,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +24,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +35,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Usuario.h" />
+		<Unit filename="include/UsuarioView.h">
+			<Option virtualFolder="View/" />
+		</Unit>
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Usuario.cpp" />
+		<Unit filename="src/UsuarioView.cpp">
+			<Option virtualFolder="View/" />
+		</Unit>
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
