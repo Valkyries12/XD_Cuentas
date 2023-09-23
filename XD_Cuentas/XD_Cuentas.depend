@@ -27,3 +27,14 @@
 	"cstring"
 	"UsuarioModel.h"
 
+1695496875 source:c:\users\ncaruso\desktop\xd_cuentas\xd_cuentas\src\usuariocontroller.cpp
+	<iostream>
+	"UsuarioController.h"
+	"UsuarioModel.h"
+	"UsuarioView.h"
+
+1695496641 c:\users\ncaruso\desktop\xd_cuentas\xd_cuentas\include\usuariocontroller.h
+	"Usuario.h"
+	"UsuarioView.h"
+	"UsuarioModel.h"
+
